@@ -1,7 +1,7 @@
 (ns garden.media
   "Utility functions for working with media queries."
   (:require [clojure.core :as clj]
-            [clojure.spec :as spec]
+            [clojure.spec.alpha :as spec]
             [garden.parse]))
 
 (def media-types
@@ -105,7 +105,7 @@
             :features (spec/? map?)))
 
 (defn parse-query-arguments
-  "Parses arguments passed to `query` using `clojure.spec/conform`
+  "Parses arguments passed to `query` using `clojure.spec.alpha/conform`
   providing defaults."
   {:private true}
   [v]

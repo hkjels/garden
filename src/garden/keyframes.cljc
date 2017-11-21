@@ -1,5 +1,5 @@
 (ns garden.keyframes
-  (:require [clojure.spec :as spec]
+  (:require [clojure.spec.alpha :as spec]
             [garden.parse]))
 
 (spec/def ::name keyword?)

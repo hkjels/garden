@@ -8,8 +8,8 @@
   :global-vars {*warn-on-reflection* true}
 
   :dependencies
-  [[org.clojure/clojure "1.9.0-alpha13" :scope "provided"]
-   [org.clojure/clojurescript "1.9.293" :scope "provided"]
+  [[org.clojure/clojure "1.9.0-RC1" :scope "provided"]
+   [org.clojure/clojurescript "1.9.946" :scope "provided"]
    [garden/garden-color "1.0.0-RC1"]
    [garden/garden-units "1.0.0-RC2"]]
 
@@ -23,8 +23,8 @@
   {:dev
    {:dependencies [[criterium "0.4.3"]
                    [hiccup "1.0.5"]]
-    :jvm-opts ["-Dclojure.spec.compile-asserts=true"
-               "-Dclojure.spec.check-asserts=true"]
+    :jvm-opts ["-Dclojure.spec.alpha.compile-asserts=true"
+               "-Dclojure.spec.alpha.check-asserts=true"]
     :plugins  [[lein-codox "0.10.2"]
                [lein-npm "0.6.1"]
                [com.jakemccrary/lein-test-refresh "0.17.0"]]
