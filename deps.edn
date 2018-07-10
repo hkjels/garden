@@ -1,0 +1,7 @@
+{:deps
+ {org.clojure/clojure       {:mvn/version "1.9.0"}
+  org.clojure/clojurescript {:mvn/version "1.10.339"}
+  org.clojure/spec.alpha    {:mvn/version "0.2.168"}
+  garden/garden-color       {:mvn/version "1.0.0-RC1"}
+  garden/garden-units       {:mvn/version "1.0.0-RC2"}}
+ :paths ["src"]}
