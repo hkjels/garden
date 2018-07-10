@@ -2,7 +2,7 @@
   "Parser for Garden syntax."
   #?@(:clj
       [(:require
-        [clojure.spec :as spec]
+        [clojure.spec.alpha :as spec]
         [garden.ast]
         [garden.color]
         [garden.units])
@@ -11,7 +11,7 @@
         (garden.units Unit))]
       :cljs
       [(:require
-        [clojure.spec :as spec]
+        [clojure.spec.alpha :as spec]
         [garden.ast]
         [garden.color :refer [Hsl Hsla Rgb Rgba]]
         [garden.units :refer [Unit]])]))
@@ -32,7 +32,7 @@
 
 (defn tag
   "Used to retrieve the tag from tagged union values produced by
-  `clojure.spec/conform` (e.g. the first element of the vector)."
+  `clojure.spec.alpha/conform` (e.g. the first element of the vector)."
   {:private true}
   [[tag :as tagged-data]]
   {:pre [(vector? tagged-data)]}

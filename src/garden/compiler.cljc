@@ -2,7 +2,7 @@
   "Functions for compiling Clojure data structures to CSS."
   (:require
    [clojure.string :as string]
-   [clojure.spec :as spec]
+   [clojure.spec.alpha :as spec]
    [garden.ast]
    [garden.normalize]
    [garden.parse]

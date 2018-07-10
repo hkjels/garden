@@ -1,4 +1,4 @@
-(defproject garden "2.0.0-alpha1"
+(defproject garden "2.0.0-alpha2"
   :description "Generate CSS with Clojure(Script)"
   :url "https://github.com/noprompt/garden"
   :license {:name "Eclipse Public License"
@@ -8,8 +8,9 @@
   :global-vars {*warn-on-reflection* true}
 
   :dependencies
-  [[org.clojure/clojure "1.9.0-alpha13" :scope "provided"]
-   [org.clojure/clojurescript "1.9.293" :scope "provided"]
+  [[org.clojure/clojure "1.9.0" :scope "provided"]
+   [org.clojure/clojurescript "1.10.339" :scope "provided"]
+   [org.clojure/spec.alpha "0.2.168"]
    [garden/garden-color "1.0.0-RC1"]
    [garden/garden-units "1.0.0-RC2"]]
 

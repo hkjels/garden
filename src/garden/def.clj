@@ -1,5 +1,5 @@
 (ns garden.def
-  (:require [clojure.spec :as spec]
+  (:require [clojure.spec.alpha :as spec]
             [garden.core]
             [garden.keyframes]
             [garden.parse]

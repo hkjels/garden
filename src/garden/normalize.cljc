@@ -1,7 +1,7 @@
 (ns garden.normalize
   (:require
    [garden.ast]
-   [clojure.spec :as spec]
+   [clojure.spec.alpha :as spec]
    [garden.util]))
 
 (spec/def ::parent-media-query-list
